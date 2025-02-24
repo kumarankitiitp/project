@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Bihar - The Land of Enlightenment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color:olive;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color:olive ;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+        }
+        nav ul li:hover {
+            background-color: gray;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            align-items: center;
+        
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          
+    
+        
+            gap: 30px;
+        }
+
+        .destination-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+
+        }
+        .destination-card:hover {
+            transform: translateY(-5px);
+        }
+
+      
+
+    
+        .destination-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+        .destination-card input[type="button"] {
+            background-color: #d90909;
+            color: white;
+            border: none;
+
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        footer {
+            background-color: olive;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Bihar</h1>
+        <p>The Land of Enlightenment and Cultural Heritage</p>
+    <img src="AdobeStock_1076011551_Preview.jpeg" alt="Bihar Header Image" style="width: 100%; height: 300px; object-fit: cover;">
+    </header>
+
+
+    <nav>
+        <ul>
+            <li><a href="index4.html">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#culture">Culture</a></li>
+            <li><a href="https://www.linkedin.com/in/ankit-kumar-57570a245?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtdCNUN%2BbSladLgmujqzuXQ%3D%3D">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="destinations">
+            <h2 class="section-title">Popular Destinations</h2>
+            <div class="destination-grid">
+                <div class="destination-card">
+                    <img src="AdobeStock_89173361_Preview.jpeg" alt="Great Buddha Statue">
+                    <div class="card-content">
+                        <h3>Bodh Gaya</h3>
+                        <p>The spiritual heart of Buddhism, where Lord Buddha attained enlightenment.</p>
+                        <input type="button" value="Learn More" onclick="location.href='https://en.wikipedia.org/wiki/Bodh_Gaya';">
+
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="AdobeStock_611875913_Preview.jpeg" alt="Nalanda University Ruins">
+                    <div class="card-content">
+                        <h3>Nalanda University</h3>
+                        <p>Ancient center of learning and one of the world's first residential universities.</p>
+                        <input type="button" value="Learn More" onclick="location.href='https://en.wikipedia.org/wiki/Nalanda_University';">
+
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="AdobeStock_438482427_Preview.jpeg" alt="Patna Sahib Gurudwara">
+                    <div class="card-content">
+                        <h3>Patna Sahib</h3>
+                        <p>Historic capital city with rich cultural heritage and religious sites.</p>
+                        <input type="button" value="Learn More" onclick="location.href='https://en.wikipedia.org/wiki/Takht_Sri_Patna_Sahib';">
+
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="AdobeStock_77802057_Preview.jpeg" alt="Vaishali Stupa">
+                    <div class="card-content">
+                        <h3>Vaishali Stupa</h3>
+                        <p>Ancient city of Lord Mahavira and important Buddhist site.</p>
+                        <input type="button" value="Learn More" onclick="location.href='https://en.wikipedia.org/wiki/Vaishali_(ancient_city)';">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="culture" class="container">
+            <h2 class="section-title">Cultural Heritage</h2>
+            <div class="destination-grid">
+                <div class="destination-card">
+                    <img src="AdobeStock_909845153_Preview.jpeg" alt="Chhath Puja">
+                    <div class="card-content">
+                        <h3>Chhath Puja</h3>
+                        <p>Ancient Hindu festival dedicated to the Sun God, celebrated with great devotion.</p>
+                        <input type="button" value="Learn More" onclick="location.href='https://en.wikipedia.org/wiki/Chhath';">
+
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="AdobeStock_951251592_Preview.jpeg" alt="Madhubani Painting">
+                    <div class="card-content">
+                        <h3>Madhubani Art</h3>
+                        <p>Traditional folk painting style known for its vibrant colors and geometric patterns.</p>
+  
+                       <input type="button" value="Learn More" onclick="location.href='https://en.wikipedia.org/wiki/Madhubani_art';">
+
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="AdobeStock_284376198_Preview.jpeg" alt="Sonepur Cattle Fair">
+                    <div class="card-content">
+                        <h3>Sonepur Mela</h3>
+                        <p>Asia's largest cattle fair held annually on Kartik Poornima.</p>
+                       <input type="button" value="Learn More" onclick="location.href='https://en.wikipedia.org/wiki/Sonepur_Cattle_Fair';">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: tourism.bihar@gov.in | +91 123 456 7890</p>
+        <p>&copy; 2023 Bihar Tourism. All rights reserved.</p>
+    </footer>
+</body>
+</html>
